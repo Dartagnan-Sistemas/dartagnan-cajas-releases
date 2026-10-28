@@ -81,6 +81,35 @@
     }
 
     .product-impresion { margin-top: 22px; }
+    .product-libreria { margin-top: 22px; }
+
+    .aviso {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      margin-top: 18px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: #fbf1df;
+      border: 1px solid #e3c48a;
+      color: #6a4a12;
+      line-height: 1.5;
+    }
+
+    .aviso strong { color: #5a3c0b; }
+
+    .card ul {
+      margin: 0 0 22px;
+      padding-left: 20px;
+      color: var(--texto-suave);
+      line-height: 1.55;
+    }
+
+    .checksum {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .82rem;
+      word-break: break-all;
+    }
 
     .hero h2 {
       margin: 0 0 12px;
@@ -239,6 +268,42 @@
       <div class="meta">
         <span>Linux 64 bits</span>
         <span>Dartagnan Sistemas</span>
+        <span>Distribución oficial vía GitHub Releases</span>
+      </div>
+    </section>
+
+    <section class="hero product-libreria" aria-labelledby="libreria-title">
+      <h2 id="libreria-title">Actualización para Librería</h2>
+      <p>Actualización de 0.1.7-2 a 0.1.8-0libreria2, exclusiva para la instalación compatible de Librería.</p>
+
+      <div class="aviso">
+        <div aria-hidden="true">!</div>
+        <div><strong>Solo para Librería.</strong> No usar en Pinturería ni en instalaciones con facturación electrónica. Requiere D'Artagnan Cajas 0.1.7-2 instalado por paquete Debian; el actualizador se detiene sin cambiar nada si el origen no coincide.</div>
+      </div>
+
+      <div class="downloads">
+        <article class="card">
+          <div class="eyebrow">Kit de actualización · recomendado</div>
+          <h3>0.1.7-2 → 0.1.8-0libreria2</h3>
+          <ul>
+            <li>Correcciones de Caja.</li>
+            <li>Filtros de Catálogo por columna.</li>
+            <li>Actualización porcentual de precios sobre los artículos filtrados.</li>
+            <li>Edición rápida de precios con doble clic.</li>
+          </ul>
+          <p>El kit incluye el actualizador con verificaciones y el respaldo automático de la base antes de actualizar. Descomprimilo, verificá las sumas con <code>sha256sum -c SHA256SUMS</code> y ejecutá <code>./actualizador_deb_linux.sh</code>.</p>
+          <a class="button primary" href="https://github.com/Dartagnan-Sistemas/dartagnan-cajas-releases/releases/download/v0.1.8-0libreria2/ACTUALIZAR_DARTAGNAN_CAJAS_LIBRERIA_0.1.7-2_A_0.1.8-0libreria2_20261027_222939.tar.gz">Descargar kit completo .tar.gz</a>
+          <p class="checksum">SHA-256: 70b7153aa1e7a0aa000ed3908ef84e4a92a5361e8f302cc2972dd779ad40bc6e</p>
+          <a class="button secondary" href="https://github.com/Dartagnan-Sistemas/dartagnan-cajas-releases/releases/download/v0.1.8-0libreria2/dartagnan-cajas_0.1.8-0libreria2_amd64.deb">Solo el paquete .deb (uso técnico)</a>
+          <p class="checksum">SHA-256: 2b44eae52858c3f7dd8e5501732dc7d6e3e0f9e11ebf4078c5884e67ddc93ab1</p>
+        </article>
+      </div>
+
+      <div class="meta">
+        <span>Linux 64 bits / amd64</span>
+        <span>Origen 0.1.7-2</span>
+        <span>Destino 0.1.8-0libreria2</span>
+        <span>Sin migraciones nuevas</span>
         <span>Distribución oficial vía GitHub Releases</span>
       </div>
     </section>
