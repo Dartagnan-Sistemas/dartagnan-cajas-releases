@@ -82,6 +82,7 @@
 
     .product-impresion { margin-top: 22px; }
     .product-libreria { margin-top: 22px; }
+    .product-pintureria { margin-top: 22px; }
 
     .aviso {
       display: grid;
@@ -303,6 +304,41 @@
         <span>Linux 64 bits / amd64</span>
         <span>Origen 0.1.7-2</span>
         <span>Destino 0.1.8-0libreria2</span>
+        <span>Sin migraciones nuevas</span>
+        <span>Distribución oficial vía GitHub Releases</span>
+      </div>
+    </section>
+
+    <section class="hero product-pintureria" aria-labelledby="pintureria-title">
+      <h2 id="pintureria-title">Actualización para Pinturería</h2>
+      <p>Actualización de 0.1.8-14 a 0.1.8-15, exclusiva para la instalación de Pinturería.</p>
+
+      <div class="aviso">
+        <div aria-hidden="true">!</div>
+        <div><strong>Solo para Pinturería.</strong> No usar en Librería ni en otras instalaciones. Requiere D'Artagnan Cajas 0.1.8-14 y el plugin de facturación electrónica dartagnan-fe 1.0.0-3 instalados por paquete Debian; el actualizador se detiene sin cambiar nada si el origen no coincide. La facturación electrónica se conserva sin cambios.</div>
+      </div>
+
+      <div class="downloads">
+        <article class="card">
+          <div class="eyebrow">Kit de actualización</div>
+          <h3>0.1.8-14 → 0.1.8-15</h3>
+          <ul>
+            <li>Correcciones de Caja.</li>
+            <li>Filtros de Catálogo por columna.</li>
+            <li>Actualización porcentual de precios sobre los artículos filtrados, con la política de redondeo.</li>
+            <li>Edición rápida de precios con doble clic.</li>
+          </ul>
+          <p>El kit incluye el actualizador con verificaciones, el respaldo automático de la base y el paquete 0.1.8-14 para el rollback. Descomprimilo, verificá las sumas con <code>sha256sum -c SHA256SUMS</code> y ejecutá <code>sudo env DARTAGNAN_POSTGRES_ADMIN_AUTHORIZED=1 ./actualizar_cajas.sh</code>.</p>
+          <a class="button primary" href="https://github.com/Dartagnan-Sistemas/dartagnan-cajas-releases/releases/download/v0.1.8-15/ACTUALIZADOR_DARTAGNAN_CAJAS_0.1.8-14_A_0.1.8-15.tar.gz">Descargar kit completo .tar.gz</a>
+          <p class="checksum">SHA-256: d4b4f9439454d261cf2fd46981abbade38746e6ea4e986cab899a6e5b97a89ef</p>
+        </article>
+      </div>
+
+      <div class="meta">
+        <span>Linux 64 bits / amd64</span>
+        <span>Origen 0.1.8-14</span>
+        <span>Destino 0.1.8-15</span>
+        <span>FE 1.0.0-3 sin cambios</span>
         <span>Sin migraciones nuevas</span>
         <span>Distribución oficial vía GitHub Releases</span>
       </div>
